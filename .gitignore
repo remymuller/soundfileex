@@ -1,5 +1,6 @@
 # Compiled python modules.
 *.pyc
+.egg*
 
 # Setuptools distribution folder.
 /dist/
