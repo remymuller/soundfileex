@@ -16,7 +16,10 @@ setup(
     packages=find_packages(),
     zip_safe=True,
     setup_requires=["PySoundFile>=0.9"],
-    install_requires=['PySoundFile>=0.9'],
+    install_requires=[
+    'PySoundFile>=0.9',
+    'numpy'
+    ],
     test_suite='nose.collector',
     tests_require=['nose'],
     #    cffi_modules=["soundfile_build.py:ffibuilder"],
