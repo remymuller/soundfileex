@@ -12,7 +12,7 @@ pipelines:
           - pip
         script: # Modify the commands below to build your repository.
           - pip install .
-          - apt-get install libsndfile1
+          - apt-get install libsndfile-dev
           - python setup.py test
 #          - python -m unittest discover unit_tests/
 
