@@ -15,13 +15,18 @@ setup(
     keywords=['audio', 'libsndfile'],
     packages=find_packages(),
     zip_safe=True,
-    setup_requires=["PySoundFile>=0.9"],
+    setup_requires=[
+        "PySoundFile>=0.9", 
+        "pytest-runner"
+    ],
     install_requires=[
-    'PySoundFile>=0.9',
-    'numpy'
+        'PySoundFile>=0.9',
+        'numpy'
     ],
     test_suite='nose.collector',
-    tests_require=['nose'],
+    tests_require=[
+        'pytest'
+    ],
     #    cffi_modules=["soundfile_build.py:ffibuilder"],
 #    extras_require={'numpy': ['numpy']},
     platforms='any',
@@ -39,7 +44,4 @@ setup(
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Multimedia :: Sound/Audio',
     ],
-#    long_description=open('README.rst').read(),
-#    tests_require=['pytest'],
-#    cmdclass=cmdclass,
 )
